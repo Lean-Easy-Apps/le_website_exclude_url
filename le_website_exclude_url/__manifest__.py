@@ -19,6 +19,10 @@
     'data': [
         'views/res_config_settings.xml',
     ],
+    'images': [
+        'static/description/module_banner.png',
+        'static/description/icon.png'
+    ],
     'installable': True,
     'auto_install': False,
     'application': False,
