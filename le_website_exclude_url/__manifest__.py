@@ -20,7 +20,7 @@
         'views/res_config_settings.xml',
     ],
     'images': [
-        'static/description/module_banner.png',
+        'static/description/module_banner.jpg',
         'static/description/icon.png'
     ],
     'installable': True,
