@@ -124,7 +124,7 @@ class Website(models.Model):
     def _check_loc_url(self, loc):
         if self.le_excl_sitemap_url:
             urls = self.le_excl_sitemap_url.split('\n')
-            
+
             if loc['loc'] in urls:
                 return False
 
