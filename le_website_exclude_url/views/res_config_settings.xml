@@ -12,7 +12,7 @@
                     <div class="o_setting_right_pane">
                         <label for="le_excl_sitemap_url"/>
                         <div class="text-muted">
-                            Each URL on a different line. Formating : /blog /website/info.
+                            Each URL on a different line. <br/>Formating: <br/>/blog <br/>/website/info.
                         </div>
                         <div class="content-group mt16">
                             <field name="le_excl_sitemap_url"/>

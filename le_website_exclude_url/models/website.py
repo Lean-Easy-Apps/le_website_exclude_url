@@ -29,8 +29,8 @@ class Website(models.Model):
             :rtype: list({name: str, url: str})
         """
 
-        router = http.root.get_db_router(request.db)
-        # Force enumeration to be performed as public user
+        router = self.env['ir.http'].routing_map()
+
         url_set = set()
 
         sitemap_endpoint_done = set()
@@ -79,7 +79,7 @@ class Website(models.Model):
                         if query == FALSE_DOMAIN:
                             continue
 
-                    for rec in converter.generate(uid=self.env.uid, dom=query, args=val):
+                    for rec in converter.generate(self.env, args=val, dom=query):
                         newval.append(val.copy())
                         newval[-1].update({name: rec})
                 values = newval
